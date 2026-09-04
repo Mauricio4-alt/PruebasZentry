@@ -1,16 +1,20 @@
 package e2e.logins;
 
 
-import org.junit.Test;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
+
 public class LoginAdminIT {
+
+
     private WebDriver driver;
 
     @BeforeEach
@@ -20,8 +24,12 @@ public class LoginAdminIT {
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
     }
+
     @Test
     public void login(){
+
+
+        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         var botonLogin= this.driver.findElement(By.className("btn-info"));
         botonLogin.click();
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
