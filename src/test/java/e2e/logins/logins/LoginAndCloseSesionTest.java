@@ -1,8 +1,5 @@
-package e2e.logins;
+package e2e.logins.logins;
 
-
-
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -11,9 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-
-public class LoginAdminIT {
-
+public class LoginAndCloseSesionTest {
 
     private WebDriver driver;
 
@@ -43,9 +38,9 @@ public class LoginAdminIT {
         botonSubmit.submit();
 
     }
-    @AfterEach
+    /*@AfterEach
     public void close(){
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         this.driver.quit();
-    }
+    }*/
 }

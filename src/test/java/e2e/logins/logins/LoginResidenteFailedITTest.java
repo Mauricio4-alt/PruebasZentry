@@ -1,10 +1,8 @@
-package e2e.logins;
+package e2e.logins.logins;
 
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class LoginResidenteFailedIT {
+public class LoginResidenteFailedITTest {
     private WebDriver driver;
 
     @BeforeEach
@@ -43,9 +41,9 @@ public class LoginResidenteFailedIT {
         Assertions.assertEquals("¡El inicio de sesión ha fallado! Por favor, revise las credenciales e intente de nuevo.",alert.getAttribute("textContent"));
         ;
     }
-    @AfterEach
+    /*@AfterEach
     public void close(){
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         this.driver.quit();
-    }
+    }*/
 }
